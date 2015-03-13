@@ -24,7 +24,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>comparejar</finalName>
+		<finalName>compare-jar</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
