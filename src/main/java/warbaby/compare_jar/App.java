@@ -33,7 +33,8 @@ public class App
 				if(Files.exists(file2)) {
 					if(!FilesEx.isFileBinaryEqual(file1, file2)) {
 						System.out.println(file1.toString());
-						FilesEx.copy(file1, Paths.get("diffs").resolve(file1.toString()));
+						FilesEx.copy(file1, Paths.get("diffs").resolve("." + file1.toString()));
+						System.out.println(Paths.get("diffs").resolve("." + file1.toString()).toAbsolutePath());
 					}
 				}
 				return FileVisitResult.CONTINUE;
